@@ -5,6 +5,7 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { CiUser } from "react-icons/ci";
 import { CiBookmark } from "react-icons/ci";
 import { IoMdLogOut } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const LeftSidebar = () => {
   return (
@@ -20,12 +21,15 @@ const LeftSidebar = () => {
             ></img>
           </div>
           <div className="my-4">
-            <div className="flex items-center my-2 px-4 py-2 hover:bg-gray-200 hover:cursor-pointer rounded-full">
+            <Link
+              to="/"
+              className="flex items-center my-2 px-4 py-2 hover:bg-gray-200 hover:cursor-pointer rounded-full"
+            >
               <div>
                 <CiHome size={"24px"} />
               </div>
               <h1 className="font-bold text-lg ml-2">Home</h1>
-            </div>
+            </Link>
             {/* // */}
             <div className="flex items-center my-2 px-4 py-2 hover:bg-gray-200 hover:cursor-pointer rounded-full">
               <div>
@@ -41,12 +45,15 @@ const LeftSidebar = () => {
               <h1 className="font-bold text-lg ml-2">Notifications</h1>
             </div>
             {/* // */}
-            <div className="flex items-center my-2 px-4 py-2 hover:bg-gray-200 hover:cursor-pointer rounded-full">
+            <Link
+              to="/profile"
+              className="flex items-center my-2 px-4 py-2 hover:bg-gray-200 hover:cursor-pointer rounded-full"
+            >
               <div>
                 <CiUser size={"24px"} />
               </div>
               <h1 className="font-bold text-lg ml-2">Profile</h1>
-            </div>
+            </Link>
             {/* // */}
             <div className="flex items-center my-2 px-4 py-2 hover:bg-gray-200 hover:cursor-pointer rounded-full">
               <div>
