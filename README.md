@@ -17,4 +17,4 @@ A Twitter clone built with the MERN stack (MongoDB, Express.js, React, Node.js).
 - Tweet posting: Users can post tweets and view tweets from other users.
 - Follow system: Users can follow/unfollow other users to see their tweets in their feed.
 - Like and comment: Users can like and comment on tweets.
-- 
+
